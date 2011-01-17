@@ -3,10 +3,52 @@
     android:orientation="vertical"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
+    android:background="@color/background"
     >
-<TextView  
-    android:layout_width="fill_parent" 
+	
+	<TextView  
+    android:layout_width="wrap_content" 
     android:layout_height="wrap_content" 
     android:text="@string/hello"
+    android:layout_gravity="center"
+    android:textSize="25px"
+    android:textColor="@color/ecriture"
+    android:layout_marginTop="10px"
     />
+
+	<Button
+ 	android:id="@+id/acces_liste"
+ 	android:layout_width="fill_parent"
+ 	android:layout_height="wrap_content"
+ 	android:layout_gravity="center"
+ 	android:text="@string/acces_liste"
+ 	android:layout_marginTop="50px"
+ 	android:layout_marginLeft="40px"
+ 	android:layout_marginRight="40px"
+ 	android:background="@drawable/mybutton2"
+ 	/>
+ 	
+  	<Button
+ 	android:id="@+id/acces_magasin"
+ 	android:layout_width="wrap_content"
+ 	android:layout_height="wrap_content"
+ 	android:layout_gravity="center"
+ 	android:text="@string/acces_magasin"
+ 	android:layout_marginTop="20px"
+ 	android:layout_marginLeft="40px"
+ 	android:layout_marginRight="40px"
+ 	android:background="@drawable/mybutton2"
+ 	/>
+ 	
+ 	<Button
+ 	android:id="@+id/accueil_aide"
+ 	android:layout_width="wrap_content"
+ 	android:layout_height="wrap_content"
+ 	android:layout_gravity="right"
+ 	android:text="@string/accueil_aide"
+ 	android:layout_marginRight="15px"
+ 	android:layout_marginBottom="15px"
+ 	android:background="@drawable/mybutton2"
+ 	/>
+ 	
 </LinearLayout>

@@ -1,5 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="hello">Hello World, courses!</string>
-    <string name="app_name">Courses</string>
+    <string name="hello">Bienvenue</string>
+    <string name="app_name">Courses2.0</string>
+    
+    <!-- main.xml -->
+    <string name="acces_liste">Créer une nouvelle liste de course</string>
+	<string name="acces_magasin">Accès au magasin</string>
+	<string name="accueil_aide">Infos</string>
+    <color name="background">#CCCCFF</color>
+    <color name="ecriture">#F7230C</color>
+    <!-- fin main.xml -->
+    
 </resources>
