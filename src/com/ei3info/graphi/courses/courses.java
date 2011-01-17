@@ -26,10 +26,9 @@ public class courses extends Activity {
 	    Button acces_magasin =(Button)findViewById(R.id.acces_magasin);
 	    Button accueil_aide =(Button)findViewById(R.id.accueil_aide);
 	    
-	  //On cre un couteur d'vnement commun aux deux Button
+	  //On crï¿½e un ï¿½couteur d'ï¿½vï¿½nement commun aux deux Button
 	    OnClickListener onClickLister = new OnClickListener() {
 	 
-	    	@Override
 	    	public void onClick(View v){
 		    	switch(v.getId()){
 		    	case R.id.acces_liste:
@@ -38,7 +37,7 @@ public class courses extends Activity {
 		    		finish();
 		    		break;
 		    	case R.id.acces_magasin:
-		    		Intent intent2 = new Intent(courses.this, courses.class);
+		    		Intent intent2 = new Intent(courses.this, Magasin.class);
 					startActivity(intent2);
 					finish();
 		    		break;
@@ -47,7 +46,7 @@ public class courses extends Activity {
 	    };
 	  
     
-	    //on affecte aux Button l'couteur d'vnement
+	    //on affecte aux Button l'ï¿½couteur d'ï¿½vï¿½nement
 	    acces_liste.setOnClickListener(onClickLister);
 	    acces_magasin.setOnClickListener(onClickLister);
 	    

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<item android:id="@+id/panier_add" 
+      android:title="Panier"
+      android:icon="@drawable/logo_panier"/>
+      
+   	<item android:id="@+id/magasin_add" 
+      android:title="Magasin"
+      android:icon="@drawable/logo_panier"/>
+      
+   	<item android:id="@+id/magasin_supp" 
+      android:title="Supprimer"
+      android:icon="@drawable/logo_poubelle"/>
+	
+</menu>
