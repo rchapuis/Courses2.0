@@ -33,7 +33,7 @@ public class courses extends Activity {
 	    	public void onClick(View v){
 		    	switch(v.getId()){
 		    	case R.id.acces_liste:
-		    		Intent intent = new Intent(courses.this, courses.class);
+		    		Intent intent = new Intent(courses.this, Listes.class);
 					startActivity(intent);
 		    		finish();
 		    		break;
