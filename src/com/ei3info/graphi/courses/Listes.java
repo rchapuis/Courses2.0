@@ -28,37 +28,37 @@ public class Listes extends Activity {
         
         setContentView(R.layout.listes);
  
-        //Rcupration de la listview cre dans le fichier main.xml
+        //Rï¿½cupï¿½ration de la listview crï¿½ï¿½e dans le fichier main.xml
         maListViewPerso = (ListView) findViewById(R.id.listviewperso);
  
-        //Cration de la ArrayList qui nous permettra de remplire la listView
+        //Crï¿½ation de la ArrayList qui nous permettra de remplire la listView
         ArrayList<HashMap<String, String>> listItem = new ArrayList<HashMap<String, String>>();
  
-        //On dclare la HashMap qui contiendra les informations pour un item
+        //On dï¿½clare la HashMap qui contiendra les informations pour un item
         HashMap<String, String> map;
  
-        //Cration d'une HashMap pour insrer les informations du premier item de notre listView
+        //Crï¿½ation d'une HashMap pour insï¿½rer les informations du premier item de notre listView
         map = new HashMap<String, String>();
-        //on insre un lment titre que l'on rcuprera dans le textView titre cr dans le fichier affichageitem.xml
+        //on insï¿½re un ï¿½lï¿½ment titre que l'on rï¿½cupï¿½rera dans le textView titre crï¿½ï¿½ dans le fichier affichageitem.xml
         map.put("titre", "Pommes de terre");
-        //on insre un lment description que l'on rcuprera dans le textView description cr dans le fichier affichageitem.xml
-        map.put("description", "Fruits&Lg - 4u");
-        //on insre la rfrence ˆ l'image (convertit en String car normalement c'est un int) que l'on rcuprera dans l'imageView cr dans le fichier affichageitem.xml
+        //on insï¿½re un ï¿½lï¿½ment description que l'on rï¿½cupï¿½rera dans le textView description crï¿½ï¿½ dans le fichier affichageitem.xml
+        map.put("description", "Fruits&Lï¿½g - 4u");
+        //on insï¿½re la rï¿½fï¿½rence ï¿½ l'image (convertit en String car normalement c'est un int) que l'on rï¿½cupï¿½rera dans l'imageView crï¿½ï¿½ dans le fichier affichageitem.xml
         map.put("img", String.valueOf(R.drawable.photonc));
         //enfin on ajoute cette hashMap dans la arrayList
         listItem.add(map);
  
-        //On refait la manip plusieurs fois avec des donnes diffrentes pour former les items de notre ListView
+        //On refait la manip plusieurs fois avec des donnï¿½es diffï¿½rentes pour former les items de notre ListView
  
         map = new HashMap<String, String>();
         map.put("titre", "Tomates");
-        map.put("description", "Fruits&Lg - 6u");
+        map.put("description", "Fruits&Lï¿½g - 6u");
         map.put("img", String.valueOf(R.drawable.photonc));
         listItem.add(map);
  
         map = new HashMap<String, String>();
         map.put("titre", "Savon");
-        map.put("description", "Cosmtiques - 1u");
+        map.put("description", "Cosmï¿½tiques - 1u");
         map.put("img", String.valueOf(R.drawable.photonc));
         listItem.add(map);
  
@@ -68,27 +68,26 @@ public class Listes extends Activity {
         map.put("img", String.valueOf(R.drawable.photonc));
         listItem.add(map);
  
-        //Cration d'un SimpleAdapter qui se chargera de mettre les items prsent dans notre list (listItem) dans la vue affichageitem
+        //Crï¿½ation d'un SimpleAdapter qui se chargera de mettre les items prï¿½sent dans notre list (listItem) dans la vue affichageitem
         SimpleAdapter mSchedule = new SimpleAdapter (this.getBaseContext(), listItem, R.layout.affichageitem,
                new String[] {"img", "titre", "description"}, new int[] {R.id.img, R.id.titre, R.id.description});
  
-        //On attribut ˆ notre listView l'adapter que l'on vient de crer
+        //On attribut ï¿½ notre listView l'adapter que l'on vient de crï¿½er
         maListViewPerso.setAdapter(mSchedule);
  
-        //Enfin on met un couteur d'vnement sur notre listView
+        //Enfin on met un ï¿½couteur d'ï¿½vï¿½nement sur notre listView
         maListViewPerso.setOnItemClickListener(new OnItemClickListener() {
-			@Override
-        	@SuppressWarnings("unchecked")
-         	public void onItemClick(AdapterView<?> a, View v, int position, long id) {
-				//on rcupre la HashMap contenant les infos de notre item (titre, description, img)
+			@SuppressWarnings("unchecked")
+         	public void onItemClick(AdapterView a, View v, int position, long id) {
+				//on rï¿½cupï¿½re la HashMap contenant les infos de notre item (titre, description, img)
         		HashMap<String, String> map = (HashMap<String, String>) maListViewPerso.getItemAtPosition(position);
-        		//on crer une boite de dialogue
+        		//on crï¿½er une boite de dialogue
         		AlertDialog.Builder adb = new AlertDialog.Builder(Listes.this);
-        		//on attribut un titre ˆ notre boite de dialogue
-        		adb.setTitle("Slection Item");
-        		//on insre un message ˆ notre boite de dialogue, et ici on affiche le titre de l'item cliqu
+        		//on attribut un titre ï¿½ notre boite de dialogue
+        		adb.setTitle("Sï¿½lection Item");
+        		//on insï¿½re un message ï¿½ notre boite de dialogue, et ici on affiche le titre de l'item cliquï¿½
         		adb.setMessage("Votre choix : "+map.get("titre"));
-        		//on indique que l'on veut le bouton ok ˆ notre boite de dialogue
+        		//on indique que l'on veut le bouton ok ï¿½ notre boite de dialogue
         		adb.setPositiveButton("Ok", null);
         		//on affiche la boite de dialogue
         		adb.show();

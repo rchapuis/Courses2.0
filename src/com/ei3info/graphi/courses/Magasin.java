@@ -41,11 +41,17 @@ public class Magasin extends Activity {
     			return true;
 
              case R.id.magasin_add:
-                 //Pour fermer l'application il suffit de faire finish()
             	 return true;
                  
              case R.id.magasin_supp:
                  return true;
-           }
-           return false;}
+           	 }
+           return false;
+          }
+        
+        @Override
+        public void onAttachedToWindow() {
+            super.onAttachedToWindow();
+            openOptionsMenu();
+        }
 }
