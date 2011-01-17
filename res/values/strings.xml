@@ -15,5 +15,15 @@
     <string name="aide_titre">Aide</string>
     <string name="aide_texte_courses">"Texte d'aide"</string>
     <!-- fin aide -->
+
+	<!-- Magasin -->   
+    <string name="magasin_add">Ajouter élément</string>
+    <string name="magasin_titre">Mon magasin</string>
+    <!-- FinMagasin -->
     
+	<!-- Panier -->   
+    <string name="panier_vider">Vider</string>
+    <string name="to_magasin">Aller au Magasin</string>
+    <string name="panier_titre">Mon panier</string>
+    <!-- FinPanier -->
 </resources>
