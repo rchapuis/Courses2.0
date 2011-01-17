@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="hello">Bienvenue</string>
+    <string name="hello">Courses 2.0</string>
     <string name="app_name">Courses2.0</string>
     
     <!-- main.xml -->
@@ -10,5 +10,10 @@
     <color name="background">#CCCCFF</color>
     <color name="ecriture">#F7230C</color>
     <!-- fin main.xml -->
+    
+    <!-- aide -->
+    <string name="aide_titre">Aide</string>
+    <string name="aide_texte_courses">"Texte d'aide"</string>
+    <!-- fin aide -->
     
 </resources>

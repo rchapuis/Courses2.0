@@ -15,6 +15,15 @@
     android:textColor="@color/ecriture"
     android:layout_marginTop="10px"
     />
+    
+    <ImageView
+	android:src="@drawable/courses"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:scaleType="fitXY"
+	android:layout_gravity="center"
+	android:layout_marginTop="20px"	
+	/>
 
 	<Button
  	android:id="@+id/acces_liste"

@@ -11,7 +11,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
+		<activity android:name=".Listes"
+        		  android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".Magasin"
+        		  android:screenOrientation="portrait">
+        </activity>
     </application>
 
 
