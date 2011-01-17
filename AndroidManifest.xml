@@ -15,6 +15,9 @@
         <activity android:name=".Magasin"
         		  android:screenOrientation="portrait">
         </activity>
+        <activity android:name=".MagasinAlphabetique"></activity>
+        <activity android:name=".MagasinPreferes"></activity>
+        <activity android:name=".MagasinCategories"></activity>
     </application>
 
 
